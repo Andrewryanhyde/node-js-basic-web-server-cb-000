@@ -1,5 +1,7 @@
 "use strict";
 
+let messages = []
+
 const http         = require('http');
 const finalhandler = require('finalhandler');
 const Router       = require('router');
