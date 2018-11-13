@@ -13,6 +13,10 @@ router.get('/', (request, response) => {
   response.end('Hello, World!');
 });
 
+route.post('/message', (request, response) => {
+  // Save the message and send the message id back to the client.
+});
+
 const server = http.createServer((request, response) => {
   router(request, response, finalhandler(request, response));
 });
