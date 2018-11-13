@@ -4,7 +4,7 @@ const http         = require('http');
 const finalhandler = require('finalhandler');
 const Router       = require('router');
 
-const router = new Router();
+const router = new Router({ mergeParams: true });
 
 router.get('/', (request, response) => {
   response.setHeader('Content-Type', 'text/plain; charset=utf-8')
